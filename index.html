@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const recipe = {
+        recipeTitle: "Драники",
+        ingredients: [
+          { name: "Картофель",
+          serving: 4, 
+          size: "шт." 
+        },
+          { 
+            name: "Лук",
+             serving: 1,
+              size: "шт." 
+            },
+          {
+             name: "Яйцо",
+              serving: 1,
+               size: "шт." 
+            },
+          {
+             name: "Мука",
+              serving: 2,
+               size: "ст.ложки" 
+            }
+        ],
+        directions: "почистите и натрите картофель, щтожмите лишнюю жидкость, добавьте натёртый лук, яйцо, муку, соль, хорошо перемешайте, разогрейте масло на сковороде и выкладывайте тесто ложкой, жарьте до золотистой корочки с обеих сторон"
+      };
+      
+      console.log('Рецепт:' + recipe.recipeTitle);
+      console.log("Ингредиенты:");
+      for( let i = 0; i < recipe.ingredients.length; i++){
+      console.log(recipe.ingredients[i].name +" " + recipe.ingredients[i].serving + recipe.ingredients[i].size )
+    }
+      console.log("Приготовление:" + recipe.directions);
+      </script>
+</body>
+</html>
